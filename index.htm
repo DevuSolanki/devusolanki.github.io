@@ -4,16 +4,26 @@
   <title>DevuSolanki</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d6cf0ae6cc.js" crossorigin="anonymous"></script>
   <style>
+    html {
+     scroll-behavior: smooth;
+  }
+    body {
+     background-image: url('https://hdwallpaper20.com/wp-content/uploads/data/2018/3/4/pink-bg-PIC-HWB214188.jpg');
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     background-attachment: fixed; 
+
+  }
   	.header {
-          padding: 290px;
-          background-image: url('https://hdwallpaper20.com/wp-content/uploads/data/2018/3/4/pink-bg-PIC-HWB214188.jpg');
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
+       
+      padding: 300px;
           
     }
 
   	.header h1 {
+      text-align: center;
   		font-size: 60px;
   		color: #000000;
   		margin-top: 0px;
@@ -21,7 +31,6 @@
   	.nav {
   		background-color: black;
   		overflow: hidden;
-  		
 
   	}
   	.nav a {
@@ -36,50 +45,129 @@
   		background-color: gray;
   		color: black;
   	}
-  	.lcolumn {
-  		float: left;
-  		width: 75%;
-  	}
-  	.rcolumn {
-  		float: left;
-  		width: 25%;
-  	}
-  	.card {
-  		background-color: gray;
-  		margin-top: 20px;
-  		padding: 20px;
-  		margin: 20px;
-  	}
+    .footer{
+      margin-left: 28%;
+      margin-right:28%;
+    }
+    .footer a{
+      text-decoration: none;
+      padding: 20px;
 
-   </style>
+    }
+    .footer li{
+      float: left;
+    }
+    .card {
+      background-color: gray;
+      padding: 20px;
+      margin: 55px;
+      width: 40%;
+      height: 500px;
+      float: left;
+      border-radius: 2%;
+      overflow-y: scroll; /* Add the ability to scroll */
+    }
+    .card h2{
+      margin-top: 0px;
+    }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+    .card::-webkit-scrollbar {
+      display: none;
+    }
+
+/* Hide scrollbar for IE and Edge */
+    .card {
+    -ms-overflow-style: none;
+    }
+
+  </style>
 </head>
 <body>
 	<div class="nav">
        <a href="#">Home</a>
        <a href="#Blogs">Blogs</a>
        <a href="#">Resume</a>
-       <a style="float: right;" ; href="#">About</a>
-    </div>
+       <a style="float: right;" href="#about">About</a>
+  </div>
 	<div class="header">
 		
-	    <h1 style="margin-bottom: 0px">Devendra Solanki</h1>
-	    <p style="margin-left: 155px;margin-top: 0px; font-size: 25px;">Navodayan,Dakshanite,IITian</p>
-
-    </div>
-    <div class="lcolumn">
+	    <h1 style="margin-bottom: 0px">I'm Devendra Solanki</h1>
+	    <h2 style="text-align: center; margin-top: 0px;">Navodayan,Dakshanite,IITian</h2>
+      <a href="#about"><div style="text-align: center;font-size: 50px;color: black;"><i class="fas fa-chevron-circle-down"></i></div></a>
+  </div>
     	<div class="card" id="Blogs">
     	<h2>Dakshana Foundation</h2>
-    	
+    	<div>
+       <img src="https://dakshana.org/wp-content/uploads/2017/08/20-2.jpg" style="width: 50%; border-radius: 20%;margin-left: 20%;"> 
+      </div>
     	<p>I have been a student of DAKSHANA FOUNDATION.
-           DAKSHANA FOUNDATION is basically a NGO that helps bright and impoverished students predominantly 
+           <br>DAKSHANA FOUNDATION is basically a NGO that helps bright and impoverished students predominantly 
            from rural India to prepare for IIT and medical entrance exams for free of cost.
-           I was enrolled there (Dakshana Bangalore Centre) in Two year programme for my JEE preparation.
+           <br>I was enrolled there (Dakshana Bangalore Centre) in Two year programme for my JEE preparation.
            Dakshana operates from Irvine, California and Pune in India. 
-           Those two year were the best part of my life as I have had some of the best days of my life.
+           <br>Those two year were the best part of my life as I have had some of the best days of my life.
            It's been almost two years I left Dakshana but I feel like yesterday only I came out of this heaven.
-           For more info. visit <a href="https://dakshana.org/" target="_blank">https://dakshana.org/</a> </p>
+           <br>For more info. visit <a href="https://dakshana.org/" target="_blank">https://dakshana.org/</a> </p>
         </div>
+      <div class="card" id="Blogs">
+      <h2>JNV.</h2>
+      <div>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSENix5OZcYBfiBp7hHtXhti25Mnx9GXFNpC4xSWHgKsMIubM5h&usqp=CAU" style="width: 50%; border-radius: 20%;margin-left: 25%;"> 
+      </div>
+      <p>Navodaya- A Home away from home.
+<br> Jawahar Navodaya Vidhyalayas(JNV) are residential schools from 5th to 12th all over the country,
+ where students do not just study, they play together ,eat together ,make friends for life and grow together.
+I studied in Navodaya from my 5th to 10th only as I got selected in Dakshana Foundation in 11th.
+<br> For a Navodayan JNV isn't just a school but a lot more than that.
+We cry the day we enter in the campus full of strangers and surely we cry the day we leave after 12th(+2).
+And after that for me at least it is not a schools it is a feeling, a bundle of emotions,and a family with whom I lived for five years.
+<br>For more info. visit <a href="https://navodaya.gov.in/nvs/en/Home1" target="_blank">https://navodaya.gov.in</a> </p>
     </div>
-    
+     <div class="card">
+      <h2>JNV.</h2>
+      <div>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSENix5OZcYBfiBp7hHtXhti25Mnx9GXFNpC4xSWHgKsMIubM5h&usqp=CAU" style="width: 50%; border-radius: 20%;margin-left: 25%;"> 
+      </div>
+      <p>Navodaya- A Home away from home.
+<br> Jawahar Navodaya Vidhyalayas(JNV) are residential schools from 5th to 12th all over the country,
+ where students do not just study, they play together ,eat together ,make friends for life and grow together.
+I studied in Navodaya from my 5th to 10th only as I got selected in Dakshana Foundation in 11th.
+<br> For a Navodayan JNV isn't just a school but a lot more than that.
+We cry the day we enter in the campus full of strangers and surely we cry the day we leave after 12th(+2).
+And after that for me at least it is not a schools it is a feeling, a bundle of emotions,and a family with whom I lived for five years.
+<br>For more info. visit <a href="https://navodaya.gov.in/nvs/en/Home1" target="_blank">https://navodaya.gov.in</a> </p>
+    </div>
+     <div class="card">
+      <h2>JNV.</h2>
+      <div>
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSENix5OZcYBfiBp7hHtXhti25Mnx9GXFNpC4xSWHgKsMIubM5h&usqp=CAU" style="width: 50%; border-radius: 20%;margin-left: 25%;"> 
+      </div>
+      <p>Navodaya- A Home away from home.
+<br> Jawahar Navodaya Vidhyalayas(JNV) are residential schools from 5th to 12th all over the country,
+ where students do not just study, they play together ,eat together ,make friends for life and grow together.
+I studied in Navodaya from my 5th to 10th only as I got selected in Dakshana Foundation in 11th.
+<br> For a Navodayan JNV isn't just a school but a lot more than that.
+We cry the day we enter in the campus full of strangers and surely we cry the day we leave after 12th(+2).
+And after that for me at least it is not a schools it is a feeling, a bundle of emotions,and a family with whom I lived for five years.
+<br>For more info. visit <a href="https://navodaya.gov.in/nvs/en/Home1" target="_blank">https://navodaya.gov.in</a> </p>
+    </div>
+    <div class="footer">
+      <h1>About me</h1>
+      <p id="about">Hello, I am a Second-year undergraduate student at Indian Institute of Technology (IIT), Bombay Mumbai, pursuing major (B.Tech) in Chemical Enginnering and minor in Design.
+Honestly I no sort of Tech. person now, but I am really interested in playing with chemicals and I guess that is what one require to be a Chemical Engineer.
+At university my life mainly occupied with academics and fun activities going on 'round the campus.
+Apart from this I like to watch movies and web series, Skating-a below average skater:), and playing Guitar- I don't have one:(.
+Here I post blogs reg. the Institutions I have been in and my experience there, and any of the spectacular thing I have been part of or experienced.
+<br>Do follow me on social handles for any queries.
+</p>
+<ul style="list-style-type:none;font-size: 50px;">
+  <li><a href="https://www.facebook.com/profile.php?id=100004597429241" target="_blank"><i class="fab fa-facebook" style="color: #4267B2"></i></a></li>
+  <li><a href="https://www.instagram.com/who_devusolanki/?hl=en" target="_blank"><i class="fab fa-instagram" style="color: #FF00FF"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/devendra-solanki-750a19191/" target="_blank"><i class="fab fa-linkedin" style="color: #0e76a8"></i></a></li>
+  <li><a href="mailto:devusolanki09@gmail.com" target="_blank"><i class="far fa-envelope" style="color: red"></i></a></li>
+</ul>
+  </div>
+
 </body>
 </html>
