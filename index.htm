@@ -5,33 +5,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <script src="https://kit.fontawesome.com/d6cf0ae6cc.js" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
+    * {
+  box-sizing: border-box;
+}
     html {
      scroll-behavior: smooth;
   }
     body {
-     background-image: url('https://hdwallpaper20.com/wp-content/uploads/data/2018/3/4/pink-bg-PIC-HWB214188.jpg');
+     background-image: url('https://www8.lunapic.com/editor/do-sharp.php?preview=1&bright=-9&rand=5625');
      background-repeat: no-repeat;
-     background-size: 100% 100%;
+     background-size: cover;
      background-attachment: fixed; 
-
+     font-size: 15px;
+     color: #000000;
   }
-  	.header {
-       
-      padding: 300px;
-          
+  	.header { 
+      padding: 280px;
     }
 
   	.header h1 {
+      font-size: 60px;
       text-align: center;
-  		font-size: 60px;
-  		color: #000000;
-  		margin-top: 0px;
   	}
   	.nav {
   		background-color: black;
   		overflow: hidden;
-
+      margin-top: 5px;
+      
   	}
   	.nav a {
   		float: left;
@@ -45,27 +54,36 @@
   		background-color: gray;
   		color: black;
   	}
-    .footer{
+    
+    footer {
       margin-left: 28%;
       margin-right:28%;
+      margin-top: 20px;
     }
-    .footer a{
+    footer a{
       text-decoration: none;
       padding: 20px;
-
+      font-size: 50px;
     }
-    .footer li{
+    footer a:hover{
+      font-size: 55px;
+    }
+    footer li{
       float: left;
     }
     .card {
       background-color: gray;
       padding: 20px;
-      margin: 55px;
+      margin-left: 95px;
+      margin-top: 50px;
       width: 40%;
       height: 500px;
       float: left;
       border-radius: 2%;
       overflow-y: scroll; /* Add the ability to scroll */
+    }
+    .card p{
+      margin-top: 10px;
     }
     .card h2{
       margin-top: 0px;
@@ -81,8 +99,44 @@
     -ms-overflow-style: none;
     }
 
+    @media screen and (max-width: 800px) {
+  .card {   
+    width: 90%;
+    padding: 15px;
+    margin: 10%;
+    font-size: 14px;
+  }
+  .header {
+    padding: 0px;
+  }
+  .header h1{
+    font-size: 30px;
+  }
+  .header h3{
+    font-size: 15px;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+  .header h1{
+    font-size: 30px;
+  }
+.card {   
+    width: 90%;
+    padding: 15px;
+    margin: 10%;
+    font-size: 14px;
+  }
+
   </style>
 </head>
+
+
 <body>
 	<div class="nav">
        <a href="#">Home</a>
@@ -91,11 +145,12 @@
        <a style="float: right;" href="#about">About</a>
   </div>
 	<div class="header">
-		
-	    <h1 style="margin-bottom: 0px">I'm Devendra Solanki</h1>
-	    <h2 style="text-align: center; margin-top: 0px;">Navodayan,Dakshanite,IITian</h2>
+	    <h1 style="margin-bottom: 0px;">I'm Devendra Solanki</h1>
+	    <h3 style="text-align: center; margin-top: 0px;">Navodayan,Dakshanite,IITian</h3>
       <a href="#about"><div style="text-align: center;font-size: 50px;color: black;"><i class="fas fa-chevron-circle-down"></i></div></a>
   </div>
+
+
     	<div class="card" id="Blogs">
     	<h2>Dakshana Foundation</h2>
     	<div>
@@ -110,6 +165,8 @@
            It's been almost two years I left Dakshana but I feel like yesterday only I came out of this heaven.
            <br>For more info. visit <a href="https://dakshana.org/" target="_blank">https://dakshana.org/</a> </p>
         </div>
+
+
       <div class="card" id="Blogs">
       <h2>JNV.</h2>
       <div>
@@ -124,6 +181,7 @@ We cry the day we enter in the campus full of strangers and surely we cry the da
 And after that for me at least it is not a schools it is a feeling, a bundle of emotions,and a family with whom I lived for five years.
 <br>For more info. visit <a href="https://navodaya.gov.in/nvs/en/Home1" target="_blank">https://navodaya.gov.in</a> </p>
     </div>
+
      <div class="card">
       <h2>JNV.</h2>
       <div>
@@ -138,6 +196,8 @@ We cry the day we enter in the campus full of strangers and surely we cry the da
 And after that for me at least it is not a schools it is a feeling, a bundle of emotions,and a family with whom I lived for five years.
 <br>For more info. visit <a href="https://navodaya.gov.in/nvs/en/Home1" target="_blank">https://navodaya.gov.in</a> </p>
     </div>
+
+
      <div class="card">
       <h2>JNV.</h2>
       <div>
@@ -152,7 +212,9 @@ We cry the day we enter in the campus full of strangers and surely we cry the da
 And after that for me at least it is not a schools it is a feeling, a bundle of emotions,and a family with whom I lived for five years.
 <br>For more info. visit <a href="https://navodaya.gov.in/nvs/en/Home1" target="_blank">https://navodaya.gov.in</a> </p>
     </div>
-    <div class="footer">
+
+
+    <footer>
       <h1>About me</h1>
       <p id="about">Hello, I am a Second-year undergraduate student at Indian Institute of Technology (IIT), Bombay Mumbai, pursuing major (B.Tech) in Chemical Enginnering and minor in Design.
 Honestly I no sort of Tech. person now, but I am really interested in playing with chemicals and I guess that is what one require to be a Chemical Engineer.
@@ -161,13 +223,13 @@ Apart from this I like to watch movies and web series, Skating-a below average s
 Here I post blogs reg. the Institutions I have been in and my experience there, and any of the spectacular thing I have been part of or experienced.
 <br>Do follow me on social handles for any queries.
 </p>
-<ul style="list-style-type:none;font-size: 50px;">
+<ul style="list-style-type:none;">
   <li><a href="https://www.facebook.com/profile.php?id=100004597429241" target="_blank"><i class="fab fa-facebook" style="color: #4267B2"></i></a></li>
   <li><a href="https://www.instagram.com/who_devusolanki/?hl=en" target="_blank"><i class="fab fa-instagram" style="color: #FF00FF"></i></a></li>
   <li><a href="https://www.linkedin.com/in/devendra-solanki-750a19191/" target="_blank"><i class="fab fa-linkedin" style="color: #0e76a8"></i></a></li>
   <li><a href="mailto:devusolanki09@gmail.com" target="_blank"><i class="far fa-envelope" style="color: red"></i></a></li>
 </ul>
-  </div>
+</footer>
 
 </body>
 </html>
