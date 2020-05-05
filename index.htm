@@ -21,7 +21,7 @@
      scroll-behavior: smooth;
   }
     body {
-     background-image: url('https://www8.lunapic.com/editor/do-sharp.php?preview=1&bright=-9&rand=5625');
+     background-image: url('https://www8.lunapic.com/editor/do-sharp.php?preview=1&bright=-8&rand=3861');
      background-repeat: no-repeat;
      background-size: cover;
      background-attachment: fixed; 
@@ -35,6 +35,8 @@
   	.header h1 {
       font-size: 60px;
       text-align: center;
+     font-family: "Trebuchet MS", Helvetica, sans-serif
+
   	}
   	.nav {
   		background-color: black;
@@ -54,27 +56,32 @@
   		background-color: gray;
   		color: black;
   	}
-    
-    footer {
-      margin-left: 28%;
-      margin-right:28%;
-      margin-top: 20px;
+    .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+    .footer {
+      margin: 28%;
+      position: relative;
+      bottom: -100px;
     }
-    footer a{
+    .footer a{
       text-decoration: none;
       padding: 20px;
       font-size: 50px;
     }
-    footer a:hover{
+    .footer a:hover{
       font-size: 55px;
     }
-    footer li{
+    .footer li{
       float: left;
     }
     .card {
-      background-color: gray;
+      background-color: #474e5d;
+      color: #ffffff;
       padding: 20px;
-      margin-left: 95px;
+      margin-left: 7%;
       margin-top: 50px;
       width: 40%;
       height: 500px;
@@ -101,14 +108,22 @@
 
     @media screen and (max-width: 800px) {
   .card {   
-    width: 90%;
+    width: 80%;
     padding: 15px;
-    margin: 10%;
     font-size: 14px;
+    height: 450px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .header {
-    padding: 0px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
+  .footer{
+    margin: 20%
+  }
+
   .header h1{
     font-size: 30px;
   }
@@ -117,28 +132,36 @@
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .nav a {
     float: none;
     width: 100%;
+    padding: 0px;
   }
   .header h1{
     font-size: 30px;
   }
+
 .card {   
-    width: 90%;
+    width: 100%;
     padding: 15px;
-    margin: 10%;
     font-size: 14px;
+    height: 450px;
+    margin: 10px 10px;
   }
+  .footer{
+    margin: 10%
+  }
+
+}
+
 
   </style>
 </head>
 
 
 <body>
-	<div class="nav">
+	<div class="nav sticky">
        <a href="#">Home</a>
        <a href="#Blogs">Blogs</a>
        <a href="#">Resume</a>
@@ -147,7 +170,6 @@
 	<div class="header">
 	    <h1 style="margin-bottom: 0px;">I'm Devendra Solanki</h1>
 	    <h3 style="text-align: center; margin-top: 0px;">Navodayan,Dakshanite,IITian</h3>
-      <a href="#about"><div style="text-align: center;font-size: 50px;color: black;"><i class="fas fa-chevron-circle-down"></i></div></a>
   </div>
 
 
@@ -187,14 +209,17 @@ And after that for me at least it is not a schools it is a feeling, a bundle of 
       <div>
        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSENix5OZcYBfiBp7hHtXhti25Mnx9GXFNpC4xSWHgKsMIubM5h&usqp=CAU" style="width: 50%; border-radius: 20%;margin-left: 25%;"> 
       </div>
-      <p>Navodaya- A Home away from home.
-<br> Jawahar Navodaya Vidhyalayas(JNV) are residential schools from 5th to 12th all over the country,
- where students do not just study, they play together ,eat together ,make friends for life and grow together.
-I studied in Navodaya from my 5th to 10th only as I got selected in Dakshana Foundation in 11th.
-<br> For a Navodayan JNV isn't just a school but a lot more than that.
-We cry the day we enter in the campus full of strangers and surely we cry the day we leave after 12th(+2).
-And after that for me at least it is not a schools it is a feeling, a bundle of emotions,and a family with whom I lived for five years.
-<br>For more info. visit <a href="https://navodaya.gov.in/nvs/en/Home1" target="_blank">https://navodaya.gov.in</a> </p>
+      <p>IIT Bombay
+No intro is required I guess :\
+For me, It is an undreamt college. 
+Those who do not know, IIT BOMBAY is the best technological institute in India.
+Speaking in terms of finance, I could not ever imagine to get in this premeire institute until Dakshana Foundation opened gate for me.
+It does really require a lot of hard work, not hardly but which requires coaching ,for that we need money and in my case it's a lot of money.
+Anyhow i'm there now, feeling kinda satisfied and happy.
+But as they say every thing is not just that perfect,likewise here in IIT which holds so called the sharpest minds of the country 
+I see a lots of confessions about lives of students which tells us it isn't that great what it seems from outside.
+Well everyone's life is different, and everyone wants the same in different ways, perhaps that is what makes them feel not so good even being in the best.
+Honestly for me , IIT Bom-bae is just the best and I'm happy here.
     </div>
 
 
@@ -214,7 +239,7 @@ And after that for me at least it is not a schools it is a feeling, a bundle of 
     </div>
 
 
-    <footer>
+    <div class="footer">
       <h1>About me</h1>
       <p id="about">Hello, I am a Second-year undergraduate student at Indian Institute of Technology (IIT), Bombay Mumbai, pursuing major (B.Tech) in Chemical Enginnering and minor in Design.
 Honestly I no sort of Tech. person now, but I am really interested in playing with chemicals and I guess that is what one require to be a Chemical Engineer.
@@ -229,7 +254,6 @@ Here I post blogs reg. the Institutions I have been in and my experience there, 
   <li><a href="https://www.linkedin.com/in/devendra-solanki-750a19191/" target="_blank"><i class="fab fa-linkedin" style="color: #0e76a8"></i></a></li>
   <li><a href="mailto:devusolanki09@gmail.com" target="_blank"><i class="far fa-envelope" style="color: red"></i></a></li>
 </ul>
-</footer>
-
+</div>
 </body>
 </html>
