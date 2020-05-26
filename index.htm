@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <title>DevuSolanki</title>
+  <title>Devendra Solanki</title>
+  <link rel = "icon" href="images/circle-cropped.png" type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <script src="https://kit.fontawesome.com/d6cf0ae6cc.js" crossorigin="anonymous"></script>
@@ -21,23 +22,27 @@
      scroll-behavior: smooth;
   }
     body {
-     background-image: url('images/imageedit_3_2729632178.jpg');
+     background-image: url('images/background2.jpg');
      background-repeat: no-repeat;
      background-size: 100% 100%;
      background-attachment: fixed; 
      font-size: 16px;
-     color: #000000;
+     color: black
+    ;
   }
   	.header { 
-      padding: 280px;
+      padding: 140px;
     }
 
   	.header h1 {
-      font-size: 60px;
+      font-size: 55px;
       text-align: center;
-     /*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
+     font-family: "Trebuchet MS", Helvetica, sans-serif;
      
   	}
+    .header h1:hover {
+      font-size: 56px;
+    }
   	.nav {
   		background-color: black;
   		overflow: hidden;
@@ -61,28 +66,33 @@
   position: sticky;
   top: 0;
 }
-    .footer {
-      margin: 26%;
-      position: relative;
-      bottom: -100px;
+ 
+    .me{
+      margin-left: 25%;
+      margin-right: 25%;
     }
-    .footer a{
-      text-decoration: none;
-      padding: 20px;
-      font-size: 50px;
-    }
-    .footer a:hover{
-      font-size: 55px;
-    }
-    .footer li{
+    
+    .me li{
       float: left;
+      list-style-type: none;
+      margin-bottom: 60px;
+    }
+    .me a{
+      text-decoration: none;
+      font-size: 40px;
+      padding: 10px;
+    }
+    .me a:hover{
+      font-size: 42px;
     }
     .card {
-      background-color: #474e5d;
-      color: #ffffff;
+      background-color: #133149;
+      border: 1px solid black;
+      color: white;
       padding: 20px;
       margin-left: 7%;
       margin-top: 50px;
+      margin-bottom: 50px;
       width: 40%;
       height: 500px;
       float: left;
@@ -99,7 +109,8 @@
       margin-top: 10px;
     }
     .card h2{
-      margin-top: 0px;
+      margin-top: 5px;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -112,7 +123,8 @@
     -ms-overflow-style: none;
     }
 
-  @media screen and (max-width: 800px) {
+
+  @media screen and (max-width: 765px) {
   .card {   
     width: 80%;
     padding: 15px;
@@ -120,33 +132,43 @@
     height: 450px;
     margin-left: 10%;
     margin-right: 10%;
+    overflow-y: scroll; /* Add the ability to scroll */
   }
   .card h2{
     font-size: 20px;
   }
   .header {
     padding: 30px;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 60px;
   }
-  .footer{
-    margin: 15%;  }
-  .footer a{
-      text-decoration: none;
-      padding: 10px;
-      font-size: 30px;
-    }
-    .footer a:hover{
-      font-size: 31px;
-    }
+ 
 
   .header h1{
     font-size: 30px;
   }
+  .header h1:hover {
+      font-size: 31px;
+    }
   .header h3{
     font-size: 15px;
   }
-}
+
+  .me {
+      margin-left: 15%;
+      margin-right: 15%;
+      font-size: 14px;
+    }
+   
+    .me a{
+      
+      font-size: 30px;
+      padding: 10px;
+    }
+    .me a:hover{
+      font-size: 32px;
+    }
+  }
 /*
 @media screen and (max-width: 450px) {
   .nav a {
@@ -190,53 +212,23 @@
 
 <body>
 	<div class="nav sticky">
-       <a href="#">Home</a>
+       <a href="#Home">Home</a>
        <a href="#Blogs">Blogs</a>
-       <a href="#">Resume</a>
+       <a href="resumeforsite.txt" target="_blank">Resume</a>
        <a style="float: right;" href="#about">About</a>
   </div>
-	<div class="header">
-	    <h1 style="margin-bottom: 0px;"><strong>I'm Devendra Solanki</strong></h1>
+	<div class="header" id="Home">
+      <img src="images/circle-cropped.png" style="width: 15vw;margin-left: 40%;">
+	    <a href="#about" style="text-decoration: none;color: black;"><h1 style="margin-bottom: 0px;"><strong>I'm Devendra Solanki</strong></h1></a>
 	    <h3 style="text-align: center; margin-top: 0px;">Navodayan,Dakshanite,IITian</h3>
   </div>
 
+  <div id="Blogs">
 
-    	<div class="card" id="Blogs">
-    	<h2>Dakshana Foundation</h2>
-    	<div>
-       <img src="/images/IMG_20181225_172918.jpg"> 
-      </div>
-    	<p><strong>Dakshana Foundation</strong> - Infinite good
-        <br>I have been a student of DAKSHANA FOUNDATION.
-           <br>It is basically a NGO that helps bright and impoverished students predominantly 
-           from rural India to prepare for IIT and medical entrance exams for free of cost.
-           <br>I was enrolled there (Dakshana Bangalore Centre) in Two year programme for my JEE preparation.
-           Dakshana operates from Irvine, California and Pune in India. 
-           <br>Those two year were the best part of my life as I have had some of the best days of my life.
-           It's been almost two years I left Dakshana but I feel like yesterday only I came out of this heaven.
-           <br>For more info. visit <a href="https://dakshana.org/" target="_blank">https://dakshana.org/</a> </p>
-        </div>
-
-
-      <div class="card" id="Blogs">
-      <h2>JNV.</h2>
-      <div>
-       <img src="/images/sea beach.jpg"> 
-      </div>
-      <p><strong>Navodaya</strong> - A Home away from home.
-<br> Jawahar Navodaya Vidhyalayas(JNV) are residential schools from 5th to 12th all over the country,
- where students do not just study, they play together ,eat together ,make friends for life and grow together.
-I studied in Navodaya from my 5th to 10th only as I got selected in Dakshana Foundation in 11th. But I was part of JNV Bangalore in my 11th and 12th.
-<br> For a Navodayan JNV isn't just a school but a lot more than that.
-We cry the day we enter in the campus full of strangers and surely we cry the day we leave after 12th(+2).
-And after that for me at least it is not a schools it is a feeling, a bundle of emotions,and a family with whom I lived for five years.
-<br>For more info. visit <a href="https://navodaya.gov.in/nvs/en/Home1" target="_blank">https://navodaya.gov.in</a> </p>
-    </div>
-
-     <div class="card">
+    	<div class="card">
       <h2>IIT BOMBAY</h2>
       <div>
-       <img src="/images/IMG_20181116_101451.jpg"> 
+       <img src="images/IMG_20181116_101451.jpg"> 
       </div>
       <p><strong>IIT Bombay</strong>
 <br>No intro is required I guess :\
@@ -248,19 +240,37 @@ Anyhow i'm there now, feeling kinda satisfied and happy.
 <br>But as they say every thing is not just that perfect,likewise here in IIT which holds so called the sharpest minds of the country 
 I see a lots of confessions about lives of students which tells us it isn't that great what it seems from outside.
 Well everyone's life is different, and everyone wants the same in different ways, perhaps that is what makes them feel not so good even being in the best.
-Honestly for me , IIT Bom-bae is just the best and I'm happy here.
+Honestly for me , IIT Bom-bae is just the best and I'm happy here.</p>
     </div>
 
 
-     <div class="card">
+     
+
+    <div class="card">
+      <h2>Dakshana Foundation</h2>
+      <div>
+       <img src="images/dakshana2.jpg"> 
+      </div>
+      <p><strong>Dakshana Foundation</strong> - Infinite good
+        <br>I have been a student of DAKSHANA FOUNDATION.
+           <br>It is basically a NGO that helps bright and impoverished students predominantly 
+           from rural India to prepare for IIT and medical entrance exams for free of cost.
+           <br>I was enrolled there (Dakshana Bangalore Centre) in Two year programme for my JEE preparation.
+           Dakshana operates from Irvine, California and Pune in India. 
+           <br>Those two year were the best part of my life as I have had some of the best days of my life.
+           It's been almost two years I left Dakshana but I feel like yesterday only I came out of this heaven.
+           <br>For more info. visit <a href="https://dakshana.org/" target="_blank">https://dakshana.org/</a> </p>
+        </div>
+
+      <div class="card">
       <h2>JNV.</h2>
       <div>
-       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSENix5OZcYBfiBp7hHtXhti25Mnx9GXFNpC4xSWHgKsMIubM5h&usqp=CAU"> 
+       <img src="images/DSC_9304.jpg"> 
       </div>
-      <p>Navodaya- A Home away from home.
+      <p><strong>Navodaya</strong> - A Home away from home.
 <br> Jawahar Navodaya Vidhyalayas(JNV) are residential schools from 5th to 12th all over the country,
  where students do not just study, they play together ,eat together ,make friends for life and grow together.
-I studied in Navodaya from my 5th to 10th only as I got selected in Dakshana Foundation in 11th.
+I studied in Navodaya from my 6th to 10th only as I got selected in Dakshana Foundation in 11th. But I was part of JNV Bangalore in my 11th and 12th.
 <br> For a Navodayan JNV isn't just a school but a lot more than that.
 We cry the day we enter in the campus full of strangers and surely we cry the day we leave after 12th(+2).
 And after that for me at least it is not a schools it is a feeling, a bundle of emotions,and a family with whom I lived for five years.
@@ -268,21 +278,43 @@ And after that for me at least it is not a schools it is a feeling, a bundle of 
     </div>
 
 
-    <div class="footer">
-      <h1><b>About me</b></h1>
-      <p id="about">Hello, I am a Second-year undergraduate student at Indian Institute of Technology (IIT), Bombay Mumbai, pursuing major (B.Tech) in Chemical Enginnering and minor in Design.
+     <div class="card">
+      <h2>Vigyan Manthan Yatra</h2>
+      <div>
+       <img src="images/vmy.jpg"> 
+      </div>
+      <p><strong>Vigyan Manthan yatra - Mission Exellence</strong>
+      <br> How it feels when someone tells you that you are going on a 10 days trip to Ahemedabad for free of cost?
+I felt that when I was in 9th standard. 
+<br>Every year Madhya Pradesh council of science of technology(MPCST) organise Vigyan Manthan yatra / MP Mission Exellence 
+in which they select students from all over the state MP and take them to visit great technological organisation or Institution of a perticular city our country India.
+<br>I was selected in VMY 2014-15, we were taken to Ahemedabad. 
+I explored Space Application center(SAC, ISRO's Branch), AMUl( Asias largest dairy), Vikaram A. Sarabai community scince center, science city of Ahemedabad and many more.
+Best part was Science City, it was just amazing and felt very unrealistic. I must say if you ever visit Ahemedabad, do pay a visit to science city, you won't regret it.
+Good thing was I had no phone/camera at that time so focus was on to gain as much as I can and explore, not on to click a pic :) .
+
+</p>
+    </div>
+
+</div>
+
+    <div class="me">
+      <h1 style="font-family: Trebuchet MS, Helvetica, sans-serif;"><b>About me</b></h1>
+      <p>Hello, I am a Second-year undergraduate student at Indian Institute of Technology (IIT), Bombay Mumbai, pursuing major (B.Tech) in Chemical Enginnering and minor in Design.
 Honestly I no sort of Tech. person now, but I am really interested in playing with chemicals and I guess that is what one require to be a Chemical Engineer.
 At university my life mainly occupied with academics and fun activities going on 'round the campus.
 Apart from this I like to watch movies and web series, Skating-a below average skater:), and playing Guitar- I don't have one:(.
 Here I post blogs reg. the Institutions I have been in and my experience there, and any of the spectacular thing I have been part of or experienced.
-<br>Do follow me on social handles for any queries.
+Do follow me on social handles for any queries.
 </p>
-<ul style="list-style-type:none;">
-  <li><a href="https://www.facebook.com/profile.php?id=100004597429241" target="_blank"><i class="fab fa-facebook" style="color: #4267B2"></i></a></li>
+<ul id="about">
+  <li><a href="https://www.facebook.com/profile.php?id=100004597429241" target="_blank"><i class="fab fa-facebook" style="color: #4267B2;"></i></a></li>
   <li><a href="https://www.instagram.com/who_devusolanki/?hl=en" target="_blank"><i class="fab fa-instagram" style="color: #FF00FF"></i></a></li>
   <li><a href="https://www.linkedin.com/in/devendra-solanki-750a19191/" target="_blank"><i class="fab fa-linkedin" style="color: #0e76a8"></i></a></li>
   <li><a href="mailto:devusolanki09@gmail.com" target="_blank"><i class="far fa-envelope" style="color: red"></i></a></li>
 </ul>
 </div>
+
+
 </body>
 </html>
